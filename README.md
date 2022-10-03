@@ -1,11 +1,7 @@
-############################################################
-
 # NEMO "Nucleus for European Modelling of the Ocean" - SI3
 
-https://www.nemo-ocean.eu/
+https://www.nemo-ocean.eu/ \
 https://sites.nemo-ocean.io/user-guide/
-
-############################################################
 
 The folder contains two different versions of NEMO:
 
@@ -38,8 +34,8 @@ The compiled case will be located in the tests folder in NEMO
 Once the case is copied, we can run it. In the folder "/nemo-4.2.0/tests/" will be now a new folder called **ICE_ADV2D_MINE_CASE**, which will be our case to be run. 
 In general, NEMO provides a README file for each tests case located in the **EXPREF** folder that exaplains how to run the simulation. In general, there are three steps: 
 
-1 - Compile the case once;
-2 - Create the initial mesh with Python script;
+1 - Compile the case once; \
+2 - Create the initial mesh with Python script; \
 3 - Run the simulation a second time to obtain the time evolution and data. 
 
 To run each different test case, I have created different folders in the **NEMO_Simulations** folder. In each folder, the output file indicate case information and the error file errors during the running. Each folder contain a file called "job.sh" that submits the case to the CSC queue and run it with the command  
