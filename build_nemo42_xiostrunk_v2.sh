@@ -4,7 +4,7 @@
 #
 # Compilation of Xios trunk and Nemo 4.2.0 in Puhti (CSC - Finland)
 # 2020-09-30, Jona Mac Intyre, FMI - Puhti RHEL8
-# 2020-09-02, Jona Mac Intyre, FMI - login1
+# 2020-09-02, Jona Mac Intyre, FMI - Puhti RHEL7
 #
 #############################################################################
 #############################################################################
