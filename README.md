@@ -1,20 +1,36 @@
-# NEMO "Nucleus for European Modelling of the Ocean" - SI3
+# NEMO "Nucleus for European Modelling of the Ocean"
+
+I describe how to compile and use NEMO on Puhti supercomputer (CSC - Finland). At the moment, Puhti is using RHEL8 and therefore the following guide is implemented for the current configuration. As part the project, I use and describe the content of a private folder in the supercomputer. Instructions should work on any other system with appropriate fixes base on the local configuration. 
+
+NEMO standing for "Nucleus for European Modelling of the Ocean" is a state-of-the-art modelling framework for research activities and forecasting services in ocean and climate sciences, developed in a sustainable way by a European consortium. Source code and better guides that the present one could be found in the official websites: 
 
 https://www.nemo-ocean.eu/ \
 https://sites.nemo-ocean.io/user-guide/
 
-The folder contains two different versions of NEMO:
+The private folder on Puhti supercomputer contains two different versions of NEMO:
 
 - NEMO 4.0 with Xios 2.5
 - NEMO 4.2.0 with Xios trunk
 
-To compile only NEMO, use the file "build-nemo42-puhti.sh", which contains the full instructions. To compile both NEMO and Xios, use the file "build_nemo42_xiostrunk.sh". Both files can be executed after correctly defined the local variables. After compilation, the reference case **ORCA2_ICE_PISCES** will be compile using the following command
+Both versions are already compiled on Puthi RHEL8. In order to compile both NEMO and Xios source codes, you can use the file "build_nemo42_xiostrunk_v2.sh", which simple runs with the command (check your shell language)
+
+```sh
+sh build_nemo42_xiostrunk_v2.sh
+```
+
+The process includes the compilation of the reference case **ORCA2_ICE_PISCES** with the command 
 
 ```sh
 ./makenemo -r ORCA2_ICE_PISCES -m puhti_intel -j 15
 ```
 
-To compile a different reference case and further information, please check the folling link https://sites.nemo-ocean.io/user-guide/cfgs.html.
+and, after successful compilation, once should see the message **Build command finished**. To compile only NEMO, use the file "build-nemo42-puhti.sh". Both files can be executed after correctly defined the local variables. All build files are located in the **BUILDING_NEMO_XIOS** folder.
+
+In order to compile a different reference case and further information, please check the following link https://sites.nemo-ocean.io/user-guide/cfgs.html.
+
+## Compiling and Running a Reference Case
+
+
 
 ## Compiling and Running Simulations
 
