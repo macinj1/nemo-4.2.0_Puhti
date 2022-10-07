@@ -5,7 +5,7 @@ NEMO standing for "Nucleus for European Modelling of the Ocean" is a state-of-th
 https://www.nemo-ocean.eu/ \
 https://sites.nemo-ocean.io/user-guide/
 
-I describe here how to compile and use NEMO on Puhti supercomputer (CSC - Finland). At the moment, Puhti is using RHEL8 and therefore the following guide is implemented for the current configuration. As part of the CSC project, I use and describe the content of a private folder in the supercomputer. Instructions should work on any other system with appropriate fixes base on the local configuration. 
+I describe here how to compile and use NEMO on Puhti supercomputer (CSC - Finland). At the moment, Puhti is using RHEL8 and therefore the following guide is implemented for the current configuration. As part of the CSC project, I use and describe the content of a private folder in the supercomputer. Instructions should work on any other system with appropriate fixes base on your local configuration. 
 
 The private folder on Puhti supercomputer contains two different versions of NEMO:
 
@@ -30,7 +30,7 @@ In order to compile a different reference case and further information, please c
 
 ## Compiling and Running a Reference Case
 
-
+Reference cases are updated before each new NEMO release. 
 
 ## Compiling and Running Simulations
 
