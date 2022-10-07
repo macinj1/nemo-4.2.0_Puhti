@@ -24,18 +24,35 @@ The process includes the compilation of the reference case **ORCA2_ICE_PISCES** 
 ./makenemo -r ORCA2_ICE_PISCES -m puhti_intel -j 15
 ```
 
-and, after successful compilation, once should see the message **Build command finished**. To compile only NEMO, use the file "build-nemo42-puhti.sh". Both files can be executed after correctly defined the local variables. All build files are located in the **BUILDING_NEMO_XIOS** folder.
+and, after successful compilation, one should see the message **Build command finished**. To compile only NEMO, use the file "build-nemo42-puhti.sh". Both files can be executed after correctly defined the local variables. All build files are located in the **BUILDING_NEMO_XIOS** folder.
 
 In order to compile a different reference case and further information, please check the following link https://sites.nemo-ocean.io/user-guide/cfgs.html.
 
 ## Compiling and Running a Reference Case
 
-Reference cases are updated before each new NEMO release. 
+Reference cases are updated before each new NEMO release and they serve as check points during the compilation process. They are located in the folder 
+
+```sh
+/nemo-4.2.0/cfgs/
+```
+
+As mention previously, one can compile a reference case using the command 
+
+```sh
+./makenemo -r REFERENCE_CASE_NAME -m puhti_intel -j 15
+```
+
+where the option -r is followed by the case's name and -m by the architecture file used during compilation. 
+
+```sh
+./makenemo -r ORCA2_ICE_PISCES -m puhti_intel -j 15
+```
+
 
 ## Compiling and Running Simulations
 
-The main folder of this section is **NEMO_Simulations**. First once needs to compile the case and this could be done using the file "compile_Simulation.sh". 
-In simple terms, the "compile_Simulation.sh" file copy a test case and compile it. Then once can modify the case and run the simulation. As an example, if once wants to ICE advection 2D case, we do it by executing the following command 
+The main folder of this section is **NEMO_Simulations**. First one have to compile the case and this could be done using the file "compile_Simulation.sh". 
+In simple terms, the "compile_Simulation.sh" file copy a test case and compile it. Then you can modify the case and run the simulation. As an example, if you wants to ICE advection 2D case, we do it by executing the following command 
 
 ```sh
 ./makenemo -n ICE_ADV2D -a ICE_ADV2D_MINE_CASE -m puhti_intel -j 15
