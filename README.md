@@ -48,6 +48,7 @@ where the option -r is followed by the case's name and -m by the architecture fi
 ./makenemo -r ORCA2_ICE_PISCES -m puhti_intel -j 15
 ```
 
+https://zenodo.org/record/3767939
 
 ## Compiling and Running Simulations
 
