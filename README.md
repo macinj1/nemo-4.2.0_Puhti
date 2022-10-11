@@ -1,3 +1,6 @@
+<img src = "
+https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/Nemo_Logo.png" width = "400"><img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/Puhti_logo.png" width = "400">
+
 # NEMO "Nucleus for European Modelling of the Ocean"
 
 NEMO standing for "Nucleus for European Modelling of the Ocean" is a state-of-the-art modelling framework for research activities and forecasting services in ocean and climate sciences, developed in a sustainable way by a European consortium. Source code and better guides that the present one could be found in the official websites: 
