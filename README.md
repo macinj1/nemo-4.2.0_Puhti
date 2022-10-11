@@ -1,5 +1,4 @@
-<img src = "
-https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/Nemo_Logo.png" width = "400"><img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/Puhti_logo.png" width = "400">
+<img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/Nemo_Logo.png" width = "400"><img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/Puhti_logo.png" width = "400">
 
 # NEMO "Nucleus for European Modelling of the Ocean"
 
