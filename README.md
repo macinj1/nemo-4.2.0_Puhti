@@ -27,31 +27,49 @@ The process includes the compilation of the reference case **ORCA2_ICE_PISCES** 
 ./makenemo -r ORCA2_ICE_PISCES -m puhti_intel -j 15
 ```
 
-and, after successful compilation, one should see the message **Build command finished**. NOTE: the previous command will compile the reference case in the original folder; it would be recommended to create your our _Reference Case_ folder (see below). To compile only NEMO, use the file "build-nemo42-puhti.sh". Both files can be executed after correctly defined the local variables. All _build_ files are located in the **BUILDING_NEMO_XIOS** folder.
+and, after successful compilation, one should see the message **Build command finished**. NOTE: the previous command will compile the reference case in the original folder; it would be recommended to create your our _Reference Case_ folder (see below). 
+
+To compile only NEMO, use the file "build-nemo42-puhti.sh". Both files can be executed after correctly defined the local variables. All _build_ files are located in the **BUILDING_NEMO_XIOS** folder.
 
 In order to compile a different reference case and further information, please check the following link https://sites.nemo-ocean.io/user-guide/cfgs.html.
 
 ## Compiling and Running a Reference Case
 
-Reference cases are updated before each new NEMO release and they serve as check points during the compilation process. They are located in the folder 
+Reference cases are updated before each new NEMO release and they serve as check points during the update process. All reference cases are located in the folder 
 
 ```sh
 /nemo-4.2.0/cfgs/
 ```
 
-As mention previously, one can compile a reference case using the command 
+As mention previously, one can compile a reference case using the following command 
 
 ```sh
-./makenemo -r REFERENCE_CASE_NAME -m puhti_intel -j 15
+./makenemo -r REFERENCE_CASE_NAME -m puhti_intel -n MY_REFERENCE_CASE_NAME -j 15
 ```
 
-where the option -r is followed by the case's name and -m by the architecture file used during compilation. 
+where the option _-r_ is followed by the case's name, _-m_ by the architecture file used during compilation, and _-n_ your new folder with the compilated version of the reference case. For example, we process to compile ORCA2 ICE PISCES (https://sites.nemo-ocean.io/user-guide/cfgs.html#orca2-ice-pisces) in our new folder **MY_ORCA2_ICE_PISCES** 
 
 ```sh
-./makenemo -r ORCA2_ICE_PISCES -m puhti_intel -j 15
+./makenemo -r ORCA2_ICE_PISCES -m puhti_intel -n MY_ORCA2_ICE_PISCES -j 15
 ```
 
-https://zenodo.org/record/3767939
+This procedure will create an experiment folder named **EXP00** into **MY_ORCA2_ICE_PISCES**, which contains the simulation configuration in the files **file_def_nemo*.xlm**. Into this folder, we have to place the input files of the simulation, which are released together with the nex NEMO version. Those files can be found in the following link https://zenodo.org/record/3767939. 
+
+Once the case is compiled, a symbolic link to **nemo.exe** is created in the **EXP00** folder, and then we can run the simulation by doing 
+
+```sh
+srun ./nemo
+```
+
+In Puhti supercomputer, we **have to** place the job on the queue (https://docs.csc.fi/support/tutorials/biojobs-on-puhti/). To do that, create a sh file following the rules here (https://docs.csc.fi/support/tutorials/biojobs-on-puhti/)
+
+```sh
+sbatch YOUR_job_FILE.sh
+```
+
+To check all possible SI3 sea ice model parameters, see the **namelist_ice_ref** Fortran namelist file. The NEMO ocean model parameters are defined in files **namelist_ref**.
+
+To summarize, I have created the **RUN_NEMO_REFCASE** folder, where the **compile_Reference_Case.sh** compiles the reference case: change the case name you wish to compile. I have also created the folder **INPUT_REF_CASE_ORCA_ICE_PISES**, which contains all the input files needed to run the **ORCA2_ICE_PISES** case. As an example, **run_simulation.sh** allows you to run the case. 
 
 ## Compiling and Running Simulations
 
