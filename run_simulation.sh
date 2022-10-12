@@ -4,8 +4,8 @@
 #!/bin/bash
 
 #SBATCH --job-name=nemo_test
-#SBATCH --account=project_2006336
-#SBATCH --partition=fmi
+#SBATCH --account=project_number
+#SBATCH --partition=partition
 #SBATCH --time=00:10:00
 #SBATCH --ntasks=20
 #SBATCH --mem-per-cpu=4G
@@ -28,7 +28,7 @@ module load boost/1.79.0-mpi
 ###########################################################################
 
 # NEMO location
-cd /fmi/scratch/project_2006336/nemo-4.2.0/cfgs/MY_ORCA2_ICE_PISCES_2/EXP00
+cd project_number/nemo-4.2.0/cfgs/MY_ORCA2_ICE_PISCES_2/EXP00
 
 srun ./nemo
 
