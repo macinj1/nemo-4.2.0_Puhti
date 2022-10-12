@@ -17,7 +17,7 @@
 
 Project_ID=project_number
 
-cd /fmi/scratch/${Project_ID}
+cd /folder/${Project_ID}
 
 nemo_version=4.2.0
 xios_version=trunk
@@ -70,7 +70,7 @@ echo _#######################################################################
 
 svn co http://forge.ipsl.jussieu.fr/ioserver/svn/XIOS/trunk ${XIOS_FOLDER}
 
-cd /fmi/scratch/${Project_ID}/${XIOS_FOLDER}
+cd /folder/${Project_ID}/${XIOS_FOLDER}
 
 #############################################################################
 #############################################################################
@@ -138,12 +138,12 @@ echo _#######################################################################
 echo "Create and compile NEMO-4.2.0"
 echo _#######################################################################
 
-cd /fmi/scratch/${Project_ID}
+cd /folder/${Project_ID}
 
 git clone https://forge.nemo-ocean.eu/nemo/nemo.git ${NEMO_FOLDER}
 ## svn co https://forge.ipsl.jussieu.fr/nemo/svn/NEMO/releases/release-4.0
 
-cd /fmi/scratch/${Project_ID}/${NEMO_FOLDER}
+cd /folder/${Project_ID}/${NEMO_FOLDER}
 
 #############################################################################
 #############################################################################
@@ -162,7 +162,7 @@ cat > arch/arch-puhti_intel.fcm <<EOF
 %ARFLAGS             rs
 %MK                  make
 
-%XIOS_HOME           /fmi/scratch/${Project_ID}/${XIOS_FOLDER}
+%XIOS_HOME           /folder/${Project_ID}/${XIOS_FOLDER}
 
 %NCDF_INC            
 %NCDF_LIB            -lnetcdff -lnetcdf -lhdf5_hl -lhdf5
