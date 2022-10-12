@@ -86,7 +86,7 @@ In general, NEMO provides a README file for each test case located in the **EXPR
 
 In the **RUN_NEMO_SIMULATION** folder, there are two _sh_ files to compile and run the test case **compile_Test_Case.sh** and **run_test_simulation.sh** (**run_test_simulation_MESH.sh**), respectively. 
 
-As in the reference case, one can compile a test case using the following command 
+As in the reference case section, one can compile a test case using the following command 
 
 ```sh
 ./makenemo -a TEST_CASE_NAME -m puhti_intel -n MY_TEST_CASE_NAME -j 15
