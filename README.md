@@ -53,7 +53,7 @@ where the option _-r_ is followed by the case's name, _-m_ by the architecture f
 ./makenemo -r ORCA2_ICE_PISCES -m puhti_intel -n MY_ORCA2_ICE_PISCES -j 15
 ```
 
-This procedure will create an experiment folder named **EXP00** into **MY_ORCA2_ICE_PISCES**, which contains the simulation configuration in the files **file_def_nemo*.xlm**. Into this folder, we have to place the input files of the simulation, which are released together with the nex NEMO version. Those files can be found in the following link https://zenodo.org/record/3767939. 
+This procedure will create an experiment folder named **EXP00** into **MY_ORCA2_ICE_PISCES**, which contains the simulation configuration in the files "file_def_nemo*.xlm". Into this folder, we have to place the input files of the simulation, which are released together with the nex NEMO version. Those files can be found in the following link https://zenodo.org/record/3767939. 
 
 Once the case is compiled, a symbolic link to **nemo.exe** is created in the **EXP00** folder, and then we can run the simulation by doing 
 
