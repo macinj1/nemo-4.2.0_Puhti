@@ -73,27 +73,31 @@ To summarize, I have created the **RUN_NEMO_REFCASE** folder, where the **compil
 
 ## Compiling and Running Simulations
 
-The main folder of this section is **NEMO_Simulations**. First one have to compile the case and this could be done using the file "compile_Simulation.sh". 
-In simple terms, the "compile_Simulation.sh" file copy a test case and compile it. Then you can modify the case and run the simulation. As an example, if you wants to ICE advection 2D case, we do it by executing the following command 
-
-```sh
-./makenemo -n ICE_ADV2D -a ICE_ADV2D_MINE_CASE -m puhti_intel -j 15
-```
-
-The compiled case will be located in the tests folder in NEMO 
+Similar to the previous section, here I describe how to run a particular case or your simulation in NEMO 4.2. The main folder of this section is **RUN_NEMO_SIMULATION**. In contrast to the previous section, test cases _are not_ revised previous release the new NEMO version, those are described https://sites.nemo-ocean.io/user-guide/tests.html and located in
 
 ```sh
 /nemo-4.2.0/tests/
 ```
-
-Once the case is copied, we can run it. In the folder "/nemo-4.2.0/tests/" will be now a new folder called **ICE_ADV2D_MINE_CASE**, which will be our case to be run. 
-In general, NEMO provides a README file for each tests case located in the **EXPREF** folder that exaplains how to run the simulation. In general, there are three steps: 
+In general, NEMO provides a README file for each test case located in the **EXPREF** folder that exaplains how to run the simulation. In general, there are three steps: 
 
 1 - Compile the case once; \
 2 - Create the initial mesh with Python script; \
 3 - Run the simulation a second time to obtain the time evolution and data. 
 
-To run each different test case, I have created different folders in the **NEMO_Simulations** folder. In each folder, the output file indicate case information and the error file errors during the running. Each folder contain a file called "job.sh" that submits the case to the CSC queue and run it with the command  
+In the **RUN_NEMO_SIMULATION** folder, there are two _sh_ files to compile and run the test case **compile_Test_Case.sh** and **run_test_simulation.sh** (**run_test_simulation_MESH.sh**), respectively. 
+
+As in the reference case, one can compile a test case using the following command 
+
+```sh
+./makenemo -a TEST_CASE_NAME -m puhti_intel -n MY_TEST_CASE_NAME -j 15
+```
+
+where the option _-a_ is followed by the case's name, _-m_ by the architecture file used during compilation, and _-n_ your new folder with the compilated version of the test case located now in _/nemo-4.2.0/tests/_. For example, we process to compile **ICE_ADV2D** case in our new folder **MY_ICE_ADV2D** 
+
+```sh
+./makenemo -a ICE_ADV2D -m puhti_intel -n MY_ICE_ADV2D -j 15
+```
+Again, we need to submit the simulation to the queue by using a "job.sh" file, which run the simulation with the command
 
 ```sh
 mpirun ./nemo 
@@ -103,6 +107,4 @@ or
 srun ./nemo 
 ```
 
-_WARNING_: modify the SBATCH option in the "job.sh" accordingly to your wishes. 
-
-Once the simulation ends, the data will be located in the folder of our case. In our example, the data will be located in **ICE_ADV2D_MINE_CASE**. 
+Once the simulation ends, the data will be located in the folder of our case. In our example, the data will be located in **MY_ICE_ADV2D**. 
