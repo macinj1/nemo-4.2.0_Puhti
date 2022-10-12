@@ -26,7 +26,7 @@ module list
 #############################################################################
 
 # NEMO location
-cd /fmi/scratch/project_2006336/nemo-4.2.0
+cd project_number/nemo-4.2.0
 
 # Reference case compilation:
 # ./makenemo -j 16 -m ARCHITECTURE_FILE -r REFERENCE_CASE_NAME -n MY_REFERENCE_CASE_NAME
