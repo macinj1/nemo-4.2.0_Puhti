@@ -9,6 +9,9 @@ https://sites.nemo-ocean.io/user-guide/
 
 I describe here how to compile and use NEMO on Puhti supercomputer (CSC - Finland). At the moment, Puhti is using RHEL8 and therefore the following guide is implemented for the current configuration. As part of the CSC project, I use and describe in what follows the content of a private folder in the supercomputer. Instructions should work on any other system with appropriate fixes base on your local configuration. 
 
+**NOTE 1:** I recommend not to use the original folders and make copies with your own names. Same applies to _sh_ files. \
+**NOTE 2:** Revisar each file before compiling. 
+
 The private folder on Puhti supercomputer contains two different versions of NEMO:
 
 - NEMO 4.0 with Xios 2.5
