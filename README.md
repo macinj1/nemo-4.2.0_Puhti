@@ -5,7 +5,8 @@
 NEMO standing for "Nucleus for European Modelling of the Ocean" is a state-of-the-art modelling framework for research activities and forecasting services in ocean and climate sciences, developed in a sustainable way by a European consortium. Source code and better guides that the present one could be found in the official websites: 
 
 https://www.nemo-ocean.eu/ \
-https://sites.nemo-ocean.io/user-guide/
+https://sites.nemo-ocean.io/user-guide/ \
+https://forge.nemo-ocean.eu/nemo/nemo/-/blob/4.2.0/README.rst
 
 I describe here how to compile and use NEMO on Puhti supercomputer (CSC - Finland). At the moment, Puhti is using RHEL8 and therefore the following guide is implemented for the current configuration. As part of the CSC project, I use and describe in what follows the content of a private folder in the supercomputer. Instructions should work on any other system with appropriate fixes base on your local configuration. 
 
