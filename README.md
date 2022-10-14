@@ -113,6 +113,12 @@ srun ./nemo
 
 Once the simulation ends, the data will be located in the folder of our case. In our example, the data will be located in **MY_ICE_ADV2D**. 
 
+# Results
+
+## ICE RHEO
+
+<img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/ICE_RHEO_EAP.png" width = "400"><img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/ICE_RHEO_EVP.png" width = "400">
+
 # References
 
 1 - “Sea Ice modelling Integrated Initiative (SI3) — The NEMO sea ice engine”, NEMO Sea Ice Working Group, Scientific Notes of Climate Modelling Center (31) – ISSN 1288-1619, Institut Pierre-Simon Laplace (IPSL). 
