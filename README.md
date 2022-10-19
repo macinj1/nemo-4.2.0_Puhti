@@ -117,7 +117,7 @@ Once the simulation ends, the data will be located in the folder of our case. In
 
 ## ICE RHEO
 
-<img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/ICE_RHEO_EAP.png" width = "500"><img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/ICE_RHEO_EVP.png" width = "500">
+<img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/ICE_RHEO_EAP.png" width = "400"><img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/ICE_RHEO_EVP.png" width = "400">
 
 # References
 
