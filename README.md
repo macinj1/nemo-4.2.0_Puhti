@@ -52,7 +52,7 @@ As mention previously, one can compile a reference case using the following comm
 ./makenemo -r REFERENCE_CASE_NAME -m puhti_intel -n MY_REFERENCE_CASE_NAME -j 15
 ```
 
-where the option _-r_ is followed by the case's name, _-m_ by the architecture file used during compilation, and _-n_ your new folder with the compilated version of the reference case. For example, we process to compile ORCA2 ICE PISCES (https://sites.nemo-ocean.io/user-guide/cfgs.html#orca2-ice-pisces) in our new folder **MY_ORCA2_ICE_PISCES** 
+where the option _-r_ is followed by the case's name, _-m_ by the architecture file used during compilation, and _-n_ your new folder with the compiled version of the reference case. For example, we process to compile ORCA2 ICE PISCES (https://sites.nemo-ocean.io/user-guide/cfgs.html#orca2-ice-pisces) in our new folder **MY_ORCA2_ICE_PISCES** 
 
 ```sh
 ./makenemo -r ORCA2_ICE_PISCES -m puhti_intel -n MY_ORCA2_ICE_PISCES -j 15
