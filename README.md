@@ -10,8 +10,8 @@ https://forge.nemo-ocean.eu/nemo/nemo/-/blob/4.2.0/README.rst
 
 I describe here how to compile and use NEMO on Puhti supercomputer (CSC - Finland). At the moment, Puhti is using RHEL8 and therefore the following guide is implemented for the current configuration. As part of the CSC project, I use and describe in what follows the content of a private folder in the supercomputer. Instructions should work on any other system with appropriate fixes base on your local configuration. 
 
-**NOTE 1:** I recommend not to use the original folders and make copies with your own names. Same applies to _sh_ files. \
-**NOTE 2:** Check the path and name folder each _sh_ file before compiling your own case. 
+**NOTE 1:** I recommend not to use the main folders of a case and instead create a copy with your own names. Same applies to _sh_ files. \
+**NOTE 2:** Check the path and name folder in each _sh_ file before compiling your own case. 
 
 The private folder on Puhti supercomputer contains two different versions of NEMO:
 
@@ -24,7 +24,8 @@ Both versions are already compiled on Puthi RHEL8. In order to compile both NEMO
 sh build_nemo42_xiostrunk_v2.sh
 ```
 
-To compile NEMO 4.0 with Xios 2.5, you need to change the names in the previous sh file. Do the same for any other version.
+To reduce future work, the previous _sh_ file contains a series of variable that you can modify and not care about the file creation during compilation. YOU JUST NEED to take care of the compiler and path where you want you source code be located.
+To compile NEMO 4.0 with Xios 2.5, you need to change the sources in the previous sh file. Do the same for any other version.
 The process includes the compilation of the reference case **ORCA2_ICE_PISCES** using the command 
 
 ```sh
