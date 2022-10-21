@@ -125,3 +125,10 @@ Once the simulation ends, the data will be located in the folder of our case. In
 1 - “Sea Ice modelling Integrated Initiative (SI3) — The NEMO sea ice engine”, NEMO Sea Ice Working Group, Scientific Notes of Climate Modelling Center (31) – ISSN 1288-1619, Institut Pierre-Simon Laplace (IPSL). 
 
 2 - Nie, Y., Li, C., Vancoppenolle, M., Cheng, B., Boeira Dias, F., Lv, X., and Uotila, P.: Sensitivity of NEMO4.0-SI3 model parameters on sea ice budgets in the Southern Ocean, Geosci. Model Dev. Discuss. [preprint], https://doi.org/10.5194/gmd-2022-170, in review, 2022. 
+
+# Useful links
+
+1 - NEMO user guide https://sites.nemo-ocean.io/user-guide/index.html
+
+2 - NEMO discussion group https://nemo-ocean.discourse.group/
+
