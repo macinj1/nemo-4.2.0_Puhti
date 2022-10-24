@@ -116,6 +116,12 @@ Once the simulation ends, the data will be located in the folder of our case. In
 
 # Results
 
+## Reference case: ORCA2 ICE PISCES 
+
+## Vortex 
+
+## ICE AGRIF
+
 ## ICE RHEO
 
 <img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/ICE_RHEO_EAP.png" width = "400"><img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/ICE_RHEO_EVP.png" width = "400">
