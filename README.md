@@ -132,7 +132,7 @@ This configuration uses the three components:
 
 All components share the same grid. The model is forced with CORE-II normal year atmospheric forcing and it uses the NCAR bulk formulae.
 
-As example, the figure below shows the heat flux at t = 5.84e3; [video](https://youtu.be/d64ZtQvR0Vw).
+As example, the figure below shows the heat flux at t = 5.84e3; time evolution of a global variable [video](https://youtu.be/d64ZtQvR0Vw).
 
 <img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/ORCA2_heatflux.png" width = "800">
 
@@ -142,9 +142,9 @@ This test case illustrates the propagation of an anticyclonic eddy over a Beta p
 
 <img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/Vortex_theta.gif" width = "800">
 
-## ICE AGRIF
-
 ## ICE RHEO
+
+Test ice rheologies: EAP and EVP models. This example shows that NEMO is avaible to reproduce the results using CICE [3]. 
 
 <img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/ICE_RHEO_EAP.png" width = "400"><img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/ICE_RHEO_EVP.png" width = "400">
 
@@ -153,6 +153,8 @@ This test case illustrates the propagation of an anticyclonic eddy over a Beta p
 1 - “Sea Ice modelling Integrated Initiative (SI3) — The NEMO sea ice engine”, NEMO Sea Ice Working Group, Scientific Notes of Climate Modelling Center (31) – ISSN 1288-1619, Institut Pierre-Simon Laplace (IPSL). 
 
 2 - Nie, Y., Li, C., Vancoppenolle, M., Cheng, B., Boeira Dias, F., Lv, X., and Uotila, P.: Sensitivity of NEMO4.0-SI3 model parameters on sea ice budgets in the Southern Ocean, Geosci. Model Dev. Discuss. [preprint], https://doi.org/10.5194/gmd-2022-170, in review, 2022. 
+
+3 - Heorton HDBS, Feltham DL, Tsamados M. 2018. Stress and deformation characteristics of sea ice in a high-resolution, anisotropic sea ice model.Phil. Trans. R. Soc. A 376: 20170349. http://dx.doi.org/10.1098/rsta.2017.0349
 
 # Useful links
 
