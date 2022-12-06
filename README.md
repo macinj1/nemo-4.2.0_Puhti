@@ -132,7 +132,9 @@ This configuration uses the three components:
 
 All components share the same grid. The model is forced with CORE-II normal year atmospheric forcing and it uses the NCAR bulk formulae.
 
-<img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/ORCA2_heatflux.png" width = "400">
+As example, the figure below shows the heat flux at t = 5.43e3 and 
+
+<img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/ORCA2_heatflux.png" width = "800">
 
 ## Vortex 
 
