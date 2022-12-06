@@ -132,11 +132,15 @@ This configuration uses the three components:
 
 All components share the same grid. The model is forced with CORE-II normal year atmospheric forcing and it uses the NCAR bulk formulae.
 
-As example, the figure below shows the heat flux at t = 5.84e3; [video](https://youtu.be/d64ZtQvR0Vw)
+As example, the figure below shows the heat flux at t = 5.84e3; [video](https://youtu.be/d64ZtQvR0Vw).
 
 <img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/ORCA2_heatflux.png" width = "800">
 
 ## Vortex 
+
+This test case illustrates the propagation of an anticyclonic eddy over a Beta plan and a flat bottom. 
+
+<img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/Vortex_theta.gif" width = "800">
 
 ## ICE AGRIF
 
