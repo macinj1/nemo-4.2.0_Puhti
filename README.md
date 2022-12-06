@@ -118,6 +118,22 @@ Once the simulation ends, the data will be located in the folder of our case. In
 
 ## Reference case: ORCA2 ICE PISCES 
 
+From [NEMO users' guide](https://sites.nemo-ocean.io/user-guide/cfgs.html#orca2-ice-pisces)
+
+ORCA2_ICE_PISCES is a reference configuration for the global ocean with a 2°x2° curvilinear horizontal mesh and 31 vertical levels, distributed using z-coordinate system and with 10 levels in the top 100m. ORCA is the generic name given to global ocean Mercator mesh, (i.e. variation of meridian scale factor as cosinus of the latitude), with two poles in the northern hemisphere so that the ratio of anisotropy is nearly one everywhere
+
+This configuration uses the three components:
+
+ * NEMO-OCE, the ocean dynamical core.
+
+ * NEMO-SI3, the thermodynamic-dynamic sea ice model.
+
+ * NEMO-TOP/PISCES, passive tracer transport module and PISCES BGC model.
+
+All components share the same grid. The model is forced with CORE-II normal year atmospheric forcing and it uses the NCAR bulk formulae.
+
+<img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/ORCA2_heatflux.png" width = "400">
+
 ## Vortex 
 
 ## ICE AGRIF
