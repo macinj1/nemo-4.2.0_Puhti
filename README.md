@@ -144,7 +144,7 @@ This test case illustrates the propagation of an anticyclonic eddy over a Beta p
 
 ## ICE RHEO
 
-Test ice rheologies: EAP and EVP models. This example shows that NEMO is avaible to reproduce the results using CICE [3]. 
+Test ice rheologies: EAP and EVP models. This example shows that NEMO can reproduce the results using CICE [3]. 
 
 <img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/ICE_RHEO_EAP.png" width = "400"><img src = "https://github.com/macinj1/nemo-4.2.0_Puhti/blob/main/figs/ICE_RHEO_EVP.png" width = "400">
 
